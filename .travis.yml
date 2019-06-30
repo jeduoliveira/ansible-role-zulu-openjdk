@@ -16,7 +16,7 @@ install:
 
 before_script:
   - cd ../
-  - mv ansible-role-$ROLE_NAME jeduoliveira.$ROLE_NAME
+  - mv ansible-role-$ROLE_NAME jeduoliveira.$ROLE_REMOTE_NAME
   - cd jeduoliveira.$ROLE_REMOTE_NAME
 
 script:
