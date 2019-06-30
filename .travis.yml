@@ -10,6 +10,7 @@ env:
     - ROLE_REMOTE_NAME: zulu_openjdk
   matrix:
     - MOLECULE_DISTRO: centos7
+    - MOLECULE_DISTRO: centos6
 
 install:
   - pip install molecule docker
