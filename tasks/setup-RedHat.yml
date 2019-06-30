@@ -4,3 +4,11 @@
   yum:
     name: "https://cdn.azul.com/zulu/bin/zulu{{ zulu_jdk_version }}-ca-jdk{{ zulu_open_jdk_version }}-linux.x86_64.rpm"
     state: "{{ zulu_package_state }}"
+
+- name: populate /etc/environment
+  lineinfile:
+    dest: "/etc/environment"
+    state: present
+    regexp: "^{{ item.key }}"
+    line: "{{ item.key }}={{ item.value}}"
+  with_items: "{{ os_environment }}"
