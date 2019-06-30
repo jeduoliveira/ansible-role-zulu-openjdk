@@ -6,7 +6,7 @@ services: docker
 
 env:
   global:
-    - ROLE_NAME: zulu-openjdk
+    - ROLE_NAME: zulu_openjdk
   matrix:
     - MOLECULE_DISTRO: centos7
 
