@@ -1,0 +1,6 @@
+---
+
+- name: install the zulu jdk rpm
+  yum:
+    name: "https://cdn.azul.com/zulu/bin/zulu{{ zulu_jdk_version }}-ca-jdk{{ zulu_open_jdk_version }}-linux.x86_64.rpm"
+    state: "{{ zulu_package_state }}"
