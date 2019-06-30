@@ -9,7 +9,6 @@ env:
     - ROLE_NAME: zulu-jdk
   matrix:
     - MOLECULE_DISTRO: centos7
-    - MOLECULE_DISTRO: centos6
 
 install:
   - pip install molecule docker
