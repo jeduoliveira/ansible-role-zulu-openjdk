@@ -6,7 +6,8 @@ services: docker
 
 env:
   global:
-    - ROLE_NAME: zulu_openjdk
+    - ROLE_NAME: zulu-openjdk
+    - ROLE_REMOTE_NAME: zulu_openjdk
   matrix:
     - MOLECULE_DISTRO: centos7
 
@@ -16,7 +17,7 @@ install:
 before_script:
   - cd ../
   - mv ansible-role-$ROLE_NAME jeduoliveira.$ROLE_NAME
-  - cd jeduoliveira.$ROLE_NAME
+  - cd jeduoliveira.$ROLE_REMOTE_NAME
 
 script:
   - molecule test
