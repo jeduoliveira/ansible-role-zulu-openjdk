@@ -4,6 +4,7 @@ galaxy_info:
   author: jeduoliveira
   description: Zulu jdk
   company: jeduoliveira
+  license: license (GPLv3)
 
   min_ansible_version: 1.2
   platforms:
