@@ -1,5 +1,7 @@
-Role Name
+Zulu OpenJDK
 =========
+[![Build Status](https://travis-ci.org/jeduoliveira/ansible-role-zulu-openjdk.svg?branch=master)](https://travis-ci.org/jeduoliveira/ansible-role-zulu-openjdk)
+
 
 A brief description of the role goes here.
 
