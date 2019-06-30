@@ -1,18 +1,16 @@
 ---
 galaxy_info:
-  role_name: zulu-openjdk
+  role_name: zulu_openjdk
   author: jeduoliveira
   description: Zulu OpenJDK for linux
   company: jeduoliveira
-  license: license (GPLv3)
-
-  min_ansible_version: 1.2
+  license: MIT
+  min_ansible_version: 2.5
   platforms:
     - name: EL
       versions:
         - 7
         - 6
-
   galaxy_tags:
     - development
     - system
