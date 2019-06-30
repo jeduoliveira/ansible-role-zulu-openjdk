@@ -4,4 +4,4 @@
   become: true
 
   roles:
-    - role: jeduoliveira.zulu-jdk
+    - role: jeduoliveira.zulu-openjdk

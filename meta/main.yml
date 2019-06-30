@@ -1,8 +1,8 @@
 ---
 galaxy_info:
-  role_name: zulu
+  role_name: zulu-openjdk
   author: jeduoliveira
-  description: Zulu jdk
+  description: Zulu OpenJDK for linux
   company: jeduoliveira
   license: license (GPLv3)
 
