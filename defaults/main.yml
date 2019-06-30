@@ -6,8 +6,8 @@ zulu_open_jdk_version: 11.0.3
 
 os_environment:
   - key: LANG
-    value : en_US.UTF-8
+    value: en_US.UTF-8
   - key: LANGUAGE
-    value : en_US:en
+    value: en_US:en
   - key: LC_ALL
-    value : en_US.UTF-8
+    value: en_US.UTF-8
