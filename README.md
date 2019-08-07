@@ -43,4 +43,4 @@ BSD
 Author Information
 ------------------
 
-This role was created in 2019 by [Jorge Eduardo](https://www.linkedin.com/in/jorgeeduardo/),
+This role was created in 2019 by [Jorge Eduardo](https://www.linkedin.com/in/jorgeeduardo/)
