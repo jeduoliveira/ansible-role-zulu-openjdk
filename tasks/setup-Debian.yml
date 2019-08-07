@@ -2,8 +2,8 @@
 
 
 - name: hack to resolve Problem with MergeList Issue
-  sudo: true
   shell: 'find /var/lib/apt/lists -maxdepth 1 -type f -exec rm -v {} \;'
+  become: yes
 
 - name: update softwares
   apt:
@@ -13,7 +13,7 @@
   apt:
     deb: "{{ zulu_url_repo }}"
     state: present
-  become: yes
+  
   environment:
     LANG: en_US.UTF-8
     LANGUAGE: en_US:en
