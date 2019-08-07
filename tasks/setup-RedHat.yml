@@ -2,7 +2,7 @@
 
 - name: install the zulu jdk rpm
   yum:
-    name: "{{ zulu_repo_utl }}"
+    name: "{{ zulu_repo_url }}"
     state: present
   environment:
     LANG: en_US.UTF-8
