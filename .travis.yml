@@ -1,19 +1,18 @@
 ---
-dist: trusty
-sudo: required
 language: python
+python: '3.7'
+
 services:
   - docker
 
 env:
   global:
     - ROLE_NAME: zulu-openjdk
-    - ROLE_REMOTE_NAME: zulu_openjdk
+
   matrix:
     - MOLECULE_DISTRO: centos7
-    - MOLECULE_DISTRO: centos6
+    - MOLECULE_DISTRO: ubuntu1804
     - MOLECULE_DISTRO: debian9
-    - MOLECULE_DISTRO: debian8
 
 
 install:
@@ -21,11 +20,13 @@ install:
 
 before_script:
   - cd ../
-  - mv ansible-role-$ROLE_NAME jeduoliveira.$ROLE_REMOTE_NAME
-  - cd jeduoliveira.$ROLE_REMOTE_NAME
+  - mv ansible-role-$ROLE_NAME jeduoliveira.$ROLE_NAME
+  - cd jeduoliveira.$ROLE_NAME
 
 script:
   - molecule test
+
+sudo: required
 
 notifications:
   webhooks: https://galaxy.ansible.com/api/v1/notifications/

@@ -16,6 +16,12 @@ galaxy_info:
         - wheezy
         - jessie
         - stretch
+    - name: Ubuntu
+      versions:
+        - precise
+        - trusty
+        - xenial
+
   galaxy_tags:
     - development
     - system
