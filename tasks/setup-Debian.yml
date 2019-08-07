@@ -1,5 +1,13 @@
 ---
 
+- name: Update all packages to the latest version
+  apt:
+    name: aptitude
+    upgrade: True
+  when:
+    - ansible_distribution == 'Ubuntu'
+
+
 - name: install the zulu jdk
   apt:
     deb: "https://cdn.azul.com/zulu/bin/zulu{{ zulu_version }}-ca-{{ jdk_version }}-linux_amd64.deb"
