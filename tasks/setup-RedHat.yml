@@ -2,7 +2,7 @@
 
 - name: install the zulu jdk rpm
   yum:
-    name: "https://cdn.azul.com/zulu/bin/zulu{{ zulu_version }}-ca-{{ jdk_version }}-linux.x86_64.rpm"
+    name: "{{ zulu_repo_utl }}"
     state: present
   environment:
     LANG: en_US.UTF-8

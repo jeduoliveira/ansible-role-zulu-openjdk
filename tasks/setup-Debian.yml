@@ -1,7 +1,7 @@
 ---
 - name: install the zulu jdk
   apt:
-    deb: "https://cdn.azul.com/zulu/bin/zulu{{ zulu_version }}-ca-{{ jdk_version }}-linux_amd64.deb"
+    deb: "{{ zulu_url_repo }}"
     state: present
   environment:
     LANG: en_US.UTF-8
