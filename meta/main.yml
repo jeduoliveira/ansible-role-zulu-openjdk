@@ -17,11 +17,6 @@ galaxy_info:
         - trusty
         - xenial
         - bionic
-    #- name: Debian
-    #  versions:
-    #    - wheezy
-    #    - jessie
-    #    - stretch
   galaxy_tags:
     - development
     - system
