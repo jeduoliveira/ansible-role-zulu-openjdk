@@ -1,12 +1,4 @@
 ---
-
-- name: Include version-specific variables for Ubuntu.
-  include_vars: "{{ ansible_distribution }}-{{ ansible_distribution_version.split('.')[0] }}.yml"
-  when: ansible_distribution == 'Ubuntu'
-
-- include_tasks: setup-Debian.yml
-  when: ansible_os_family == 'Debian'
-
 - name: Define zulu_version.
   set_fact:
     zulu_version: "{{ __zulu_version }}"
@@ -16,3 +8,9 @@
   set_fact:
     jdk_version: "{{ __jdk_version }}"
   when: jdk_version is not defined
+
+- include_tasks: setup-RedHat.yml
+  when: ansible_os_family == 'RedHat'
+
+- include_tasks: setup-Debian.yml
+  when: ansible_os_family == 'Debian'

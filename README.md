@@ -14,8 +14,8 @@ Role Variables
 --------------
 Available variables are listed below, along with default values:
 
-    zulu_jdk_version: 11.31.11
-    zulu_open_jdk_version: 11.0.3
+    zulu_version: "11.33.15"
+    jdk_version: jdk11.0.4
 
 Dependencies
 ------------

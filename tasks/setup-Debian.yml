@@ -2,11 +2,8 @@
 
 - name: install the zulu jdk
   apt:
-    name: "https://cdn.azul.com/zulu/bin/zulu{{ zulu_verison }}-ca-{{ jdk_version }}-linux_amd64.deb"
+    deb: "https://cdn.azul.com/zulu/bin/zulu{{ zulu_version }}-ca-{{ jdk_version }}-linux_amd64.deb"
     state: present
-  when:
-    - ansible_distribution == 'Ubuntu'
-    - ansible_distribution_version == '18.04'
   environment:
     LANG: en_US.UTF-8
     LANGUAGE: en_US:en
