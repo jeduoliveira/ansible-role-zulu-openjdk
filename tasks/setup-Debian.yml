@@ -22,7 +22,7 @@
 
 - name: install the zulu jdk
   apt:
-    name: "https://cdn.azul.com/zulu/bin/zulu{{ zulu_verison }}-ca-{{jdk_version}}-linux_amd64.deb"
+    name: "https://cdn.azul.com/zulu/bin/zulu{{ zulu_verison }}-ca-{{ jdk_version }}-linux_amd64.deb"
     state: present
   when:
     - ansible_distribution == 'Ubuntu'
