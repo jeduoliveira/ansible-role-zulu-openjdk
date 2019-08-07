@@ -1,0 +1,10 @@
+---
+
+- name: install the zulu jdk rpm
+  apt:
+    name: "https://cdn.azul.com/zulu/bin/zulu{{ zulu_jdk_version }}-ca-jdk{{ zulu_open_jdk_version }}-linux.x86_64.rpm"
+    state: present
+  environment:
+    LANG: en_US.UTF-8
+    LANGUAGE: en_US:en
+    LC_ALL: en_US.UTF-8

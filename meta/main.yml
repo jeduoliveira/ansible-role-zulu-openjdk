@@ -2,7 +2,7 @@
 galaxy_info:
   role_name: zulu_openjdk
   author: jeduoliveira
-  description: Zulu OpenJDK for CentOS
+  description: Zulu OpenJDK for CentOSi
   company: jeduoliveira
   license: MIT
   min_ansible_version: 2.5
@@ -11,6 +11,17 @@ galaxy_info:
       versions:
         - 7
         - 6
+    - name: Ubuntu
+      versions:
+        - precise
+        - trusty
+        - xenial
+        - bionic
+    - name: Debian
+      versions:
+        - wheezy
+        - jessie
+        - stretch
   galaxy_tags:
     - development
     - system
