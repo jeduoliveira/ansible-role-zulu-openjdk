@@ -5,8 +5,8 @@
   sudo: true
   shell: 'find /var/lib/apt/lists -maxdepth 1 -type f -exec rm -v {} \;'
 
-- name: update softwares 
-  apt: 
+- name: update softwares
+  apt:
     update_cache: yes
 
 - name: install the zulu jdk
