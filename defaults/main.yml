@@ -1,5 +1,4 @@
 ---
-zulu_package_state: present
 
 zulu_jdk_version: 11.31.11
 zulu_open_jdk_version: 11.0.3
