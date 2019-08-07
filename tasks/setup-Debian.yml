@@ -1,20 +1,4 @@
 ---
-
-- name: Add an apt key by id from a keyserver
-  apt_key:
-    keyserver: hkp://keyserver.ubuntu.com:80
-    id: "0xB1998361219BD9C9"
-
-- name: add repository
-  apt_repository:
-    repo: deb http://repos.azulsystems.com/ubuntu stable main
-    state: present
-
-- name: Update all packages
-  apt:
-    update_cache: yes
-    upgrade: dist
-
 - name: install the zulu jdk
   apt:
     deb: "{{ zulu_url_repo }}"
