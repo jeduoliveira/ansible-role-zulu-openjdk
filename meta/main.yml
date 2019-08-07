@@ -11,17 +11,17 @@ galaxy_info:
       versions:
         - 7
         - 6
-    #- name: Ubuntu
-    #  versions:
-    #    - precise
-    #    - trusty
-    #    - xenial
-    #    - bionic
-    - name: Debian
+    - name: Ubuntu
       versions:
-        - wheezy
-        - jessie
-        - stretch
+        - precise
+        - trusty
+        - xenial
+        - bionic
+    #- name: Debian
+    #  versions:
+    #    - wheezy
+    #    - jessie
+    #    - stretch
   galaxy_tags:
     - development
     - system

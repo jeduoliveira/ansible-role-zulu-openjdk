@@ -1,5 +1,32 @@
 ---
 
+- name: Add an apt key by id from a keyserver
+  apt_key:
+    keyserver: hkp://keyserver.ubuntu.com:80
+    state: present
+
+
+- name: install repo Ubuntu
+  apt_repository:
+    repo: deb http://repos.azulsystems.com/ubuntu stable main
+    state: present
+  when:
+    - ansible_distribution == 'Ubuntu'
+
+- name: Update and upgrade apt packages
+  become: true
+  apt:
+    upgrade: yes
+    update_cache: yes
+    cache_valid_time: 86400
+
+- name : install 
+  apt: 
+    name: zulu-11
+    state: present
+  when:
+    - ansible_distribution == 'Ubuntu'
+    - ansible_distribution_version == '18.04'
 - name: install the zulu jdk rpm
   apt:
     name: "https://cdn.azul.com/zulu/bin/zulu{{ zulu_jdk_version }}-ca-jdk{{ zulu_open_jdk_version }}-linux.x86_64.rpm"
