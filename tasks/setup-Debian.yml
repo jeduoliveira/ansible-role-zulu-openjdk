@@ -1,7 +1,13 @@
 ---
-- name: update softwares
+- name: add repository
+  apt_repository:
+    repo: deb http://repos.azulsystems.com/ubuntu stable main
+    state: present
+
+- name: Update all packages
   apt:
     update_cache: yes
+    upgrade: dist
 
 - name: install the zulu jdk
   apt:
