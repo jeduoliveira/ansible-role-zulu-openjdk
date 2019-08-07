@@ -1,6 +1,6 @@
 ---
 galaxy_info:
-  role_name: zulu_openjdk
+  role_name: zulu-openjdk
   author: jeduoliveira
   description: Zulu OpenJDK for CentOS
   company: jeduoliveira
