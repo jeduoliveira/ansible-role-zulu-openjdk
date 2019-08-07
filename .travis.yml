@@ -10,27 +10,10 @@ env:
     - ROLE_NAME: zulu-openjdk
     - ROLE_REMOTE_NAME: zulu_openjdk
   matrix:
-    - MOLECULE_DISTRO: centos:7
-      MOLECULE_SERVICE_MANAGER: systemd
-      MOLECULE_COMMAND: /usr/sbin/init
-    - MOLECULE_DISTRO: fedora:27
-      MOLECULE_SERVICE_MANAGER: systemd
-      MOLECULE_COMMAND: /usr/sbin/init
-    - MOLECULE_DISTRO: fedora:28
-      MOLECULE_SERVICE_MANAGER: systemd
-      MOLECULE_COMMAND: /usr/sbin/init
-    - MOLECULE_DISTRO: ubuntu-upstart:trusty
-      MOLECULE_COMMAND: /sbin/init
-    - MOLECULE_DISTRO: ubuntu:xenial
-      MOLECULE_COMMAND: /sbin/init
-    - MOLECULE_DISTRO: ubuntu:bionic
-      MOLECULE_SERVICE_MANAGER: systemd
-      MOLECULE_COMMAND: /lib/systemd/systemd
-    - MOLECULE_DISTRO: debian:jessie
-      MOLECULE_COMMAND: /sbin/init
-    - MOLECULE_DISTRO: debian:stretch
-      MOLECULE_SERVICE_MANAGER: systemd
-      MOLECULE_COMMAND: /lib/systemd/systemd
+    - MOLECULE_DISTRO: centos7
+    - MOLECULE_DISTRO: centos6
+    - MOLECULE_DISTRO: debian9
+    - MOLECULE_DISTRO: debian8
 
 
 install:
