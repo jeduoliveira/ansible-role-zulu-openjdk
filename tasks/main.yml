@@ -7,7 +7,12 @@
 - include_tasks: setup-Debian.yml
   when: ansible_os_family == 'Debian'
 
-- name: Define zulu_packages.
+- name: Define zulu_version.
   set_fact:
-    zulu_packages: "{{ __zulu_packages }}"
-  when: zulu_packages is not defined
+    zulu_version: "{{ __zulu_version }}"
+  when: zulu_version is not defined
+
+- name: Define jdk_version.
+  set_fact:
+    jdk_version: "{{ __jdk_version }}"
+  when: jdk_version is not defined

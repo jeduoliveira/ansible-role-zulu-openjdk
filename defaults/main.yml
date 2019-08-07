@@ -1,4 +1,4 @@
 ---
 
-zulu_packages:
-  - zulu-11
+zulu_verison: "11.33.15"
+jdk_version: jdk11.0.4
