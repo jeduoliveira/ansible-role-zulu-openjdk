@@ -13,7 +13,7 @@
   apt:
     deb: "{{ zulu_url_repo }}"
     state: present
-  
+
   environment:
     LANG: en_US.UTF-8
     LANGUAGE: en_US:en
