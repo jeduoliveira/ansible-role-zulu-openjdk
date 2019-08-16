@@ -1,8 +1,13 @@
 ---
+- name: Download Zulu JDK
+  get_url:
+    url: "{{ zulu_repo_url }}"
+    dest: "/tmp/zulu-jdk.rpm"
+    mode: 0440
 
-- name: install the zulu jdk rpm
+- name: "Install Zulu JDK rpm"
   yum:
-    name: "{{ zulu_repo_url }}"
+    name: "/tmp/zulu-jdk.rpm"
     state: present
   environment:
     LANG: en_US.UTF-8
