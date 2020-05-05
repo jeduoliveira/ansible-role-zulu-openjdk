@@ -1,5 +1,3 @@
 ---
-zulu_url_repo: https://cdn.azul.com/zulu/bin/zulu{{ zulu_version }}-ca-{{ jdk_version }}-linux_amd64.deb
+zulu_url_repo: https://cdn.azul.com/zulu/bin/zulu{{ zulu_release }}-ca-{{ zulu_jdk_version }}-linux_amd64.deb
 
-__zulu_version: "11.33.15"
-__jdk_version: jdk11.0.4

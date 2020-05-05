@@ -1,5 +1,7 @@
 ---
-# Include variables and define needed variables.
+- name: Include variables.
+  include_vars: vars.yml
+
 - name: Include OS-specific variables.
   include_vars: "{{ ansible_os_family }}.yml"
 
@@ -8,13 +10,26 @@
     zulu_version: "{{ __zulu_version }}"
   when: zulu_version is not defined
 
-- name: Define jdk_version.
+- name: Define Zulu Release.
   set_fact:
-    jdk_version: "{{ __jdk_version }}"
-  when: jdk_version is not defined
+    zulu_release: "{{ __zulu_release }}"
+  when: zulu_release is not defined
+
+- name: Define zulu_jdk_version.
+  set_fact:
+    zulu_jdk_version: "{{ __zulu_jdk_version }}"
+  when: zulu_jdk_version is not defined
 
 - include_tasks: setup-RedHat.yml
   when: ansible_os_family == 'RedHat'
 
 - include_tasks: setup-Debian.yml
   when: ansible_os_family == 'Debian'
+
+- name: set JAVA_HOME if configured.
+  template:
+    src: java_home.sh.j2
+    dest: /etc/profile.d/java_home.sh
+    mode: 0755
+  when: java_home is defined and java_home
+
