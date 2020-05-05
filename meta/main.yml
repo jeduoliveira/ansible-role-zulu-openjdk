@@ -14,14 +14,13 @@ galaxy_info:
         - 6
     - name: Debian
       versions:
-        - wheezy
-        - jessie
-        - stretch
-    - name: Ubuntu
-      versions:
-        - precise
-        - trusty
-        - xenial
+        - debian10
+        - debian9
+    #- name: Ubuntu
+    #  versions:
+    #    - precise
+    #    - trusty
+    #    - xenial
 
   galaxy_tags:
     - development
