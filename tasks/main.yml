@@ -31,4 +31,6 @@
     src: java_home.sh.j2
     dest: /etc/profile.d/java_home.sh
     mode: 0755
+  environment:
+    JAVA_HOME: "{{ java_home }}"
   when: java_home is defined and java_home
