@@ -1,1 +1,3 @@
 ---
+
+java_home: /usr/lib/jvm/zulu-{{ zulu_version }}
