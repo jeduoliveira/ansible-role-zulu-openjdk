@@ -44,8 +44,7 @@ jobs:
           - centos8
           - centos7
           - centos6
-          - suse11
-          - suse12
+          - amazonlinux2
     steps:
       - name: Check out the codebase.
         uses: actions/checkout@v2

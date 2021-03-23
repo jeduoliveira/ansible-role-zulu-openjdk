@@ -12,10 +12,6 @@ galaxy_info:
         - 8
         - 7
         - 6
-    - name: Debian
-      versions:
-        - debian10
-        - debian9
 
   galaxy_tags:
     - development
