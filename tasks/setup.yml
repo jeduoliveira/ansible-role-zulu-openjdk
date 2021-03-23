@@ -3,16 +3,16 @@
 - name: import a key zulu
   ansible.builtin.rpm_key:
     state: present
-    key: https://www.azul.com/files/0xB1998361219BD9C9.txt
+    key: "{{ zulu_url_key }}"
 
 - name: install zulu-repo
   yum:
-    name: https://cdn.azul.com/zulu/bin/zulu-repo-1.0.0-1.noarch.rpm
+    name: "{{ zulu_repo_url }}"
     state: present
 
 - name: install zulu-jre-headless
   yum:
-    name: zulu11-jre-headless
+    name: "{{ zulu_package_name }}"
     state: present
     validate_certs: false
   environment:

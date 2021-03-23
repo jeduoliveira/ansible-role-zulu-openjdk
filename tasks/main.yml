@@ -5,20 +5,20 @@
 - name: Include OS-specific variables.
   include_vars: "{{ ansible_os_family }}.yml"
 
-- name: Define zulu_version.
+- name: Define zulu_key_url.
   set_fact:
-    zulu_version: "{{ __zulu_version }}"
-  when: zulu_version is not defined
+    zulu_key_url: "{{ __zulu_key_url }}"
+  when: zulu_key_url is not defined
 
-- name: Define Zulu Release.
+- name: Define zulu_repo_url
   set_fact:
-    zulu_release: "{{ __zulu_release }}"
-  when: zulu_release is not defined
+    zulu_repo_url: "{{ __zulu_repo_url }}"
+  when: zulu_repo_url is not defined
 
-- name: Define zulu_jdk_version.
+- name: Define zulu_package_name.
   set_fact:
-    zulu_jdk_version: "{{ __zulu_jdk_version }}"
-  when: zulu_jdk_version is not defined
+    zulu_package_name: "{{ __zulu_package_name }}"
+  when: zulu_package_name is not defined
 
 - include_tasks: setup.yml
 

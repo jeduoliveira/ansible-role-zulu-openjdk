@@ -1,2 +1,0 @@
----
-zulu_url_repo: https://cdn.azul.com/zulu/bin/zulu{{ zulu_release }}-ca-{{ zulu_jdk_version }}-linux_amd64.deb

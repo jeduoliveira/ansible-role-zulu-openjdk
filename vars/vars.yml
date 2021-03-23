@@ -1,4 +1,5 @@
 ---
-__zulu_version: 11
-__zulu_release: 11.45.27
-__zulu_jdk_version: jdk11.0.10
+
+__zulu_key_url: https://www.azul.com/files/0xB1998361219BD9C9.txt
+__zulu_repo_url: https://cdn.azul.com/zulu/bin/zulu-repo-1.0.0-1.noarch.rpm
+__zulu_package_name: zulu11-jre-headless
