@@ -43,7 +43,6 @@ jobs:
         distro:
           - centos8
           - centos7
-          - centos6
           - amazonlinux2
     steps:
       - name: Check out the codebase.
