@@ -27,9 +27,7 @@ Example Playbook
 
     - hosts: servers
       roles:
-        - role: jeduoliveira.zulu_openjdk
-          zulu_version: "11.33.15"
-          jdk_version: jdk11.0.4
+        - role: jeduoliveira.zulu
 
 License
 -------
