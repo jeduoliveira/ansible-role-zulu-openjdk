@@ -3,7 +3,7 @@ Zulu OpenJDK
 [![Build Status](https://travis-ci.org/jeduoliveira/ansible-role-zulu-openjdk.svg?branch=master)](https://travis-ci.org/jeduoliveira/ansible-role-zulu-openjdk)
 
 
-Installs Zulu JDK for RedHat/CentOS linux servers.
+Installs Zulu JDK for CentOS/AmazonLinux linux servers.
 
 Requirements
 ------------
