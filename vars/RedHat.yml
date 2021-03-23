@@ -1,2 +1,3 @@
 ---
+
 zulu_url_repo: "https://cdn.azul.com/zulu/bin/zulu{{ zulu_release }}-ca-{{ zulu_jdk_version }}-linux.x86_64.rpm"
