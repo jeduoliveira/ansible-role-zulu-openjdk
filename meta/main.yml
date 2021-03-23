@@ -1,6 +1,6 @@
 ---
 galaxy_info:
-  role_name: zulu-openjdk
+  role_name: zulu
   author: jeduoliveira
   description: Zulu OpenJDK for CentOS
   company: jeduoliveira
@@ -16,11 +16,6 @@ galaxy_info:
       versions:
         - debian10
         - debian9
-    #- name: Ubuntu
-    #  versions:
-    #    - precise
-    #    - trusty
-    #    - xenial
 
   galaxy_tags:
     - development

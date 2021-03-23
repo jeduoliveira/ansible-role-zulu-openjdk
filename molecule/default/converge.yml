@@ -10,4 +10,4 @@
       changed_when: false
 
   roles:
-    - role: jeduoliveira.zulu-openjdk
+    - role: jeduoliveira.zulu
